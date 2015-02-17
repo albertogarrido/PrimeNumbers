@@ -20,6 +20,15 @@ public class Test01 {
 		assertFalse("9 is not a Prime Number", new Number(9).isPrime());
 		assertFalse("10 is not a Prime Number", new Number(10).isPrime());
 	}
+	@Test
+	public void TestDivisors(){
+		Number number = new Number(0);
+		assertEquals(1, number.countPositiveDivisors(1));
+		assertEquals(2, number.countPositiveDivisors(2));
+		//test that skip the search of divisors after 2
+		assertEquals(2, number.countPositiveDivisors(4));
+		assertEquals(3, number.countPositiveDivisors(100));
+	}
 
 
 }

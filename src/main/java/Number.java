@@ -35,7 +35,7 @@ public class Number {
 		return true;
 	}
 
-	private int countPositiveDivisors(int number) {
+	public int countPositiveDivisors(int number) {
 		Integer i = 1;
 		int factorsCount = 0;
 		while (i < Math.sqrt(number) + 1) {
